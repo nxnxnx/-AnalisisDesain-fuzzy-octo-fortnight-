@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
     Button b;
@@ -26,6 +27,13 @@ public class MainActivity extends AppCompatActivity {
                         passwordText.getText().toString().equals("123")){
                     Intent intent = new Intent(context, WelcomePage.class);
                     startActivity(intent);
+                }
+                else {
+                    Context toastContext = getApplicationContext();
+                    CharSequence toastOut = "Wrong username/password combination";
+                    int duration = Toast.LENGTH_SHORT;
+                    Toast toast = Toast.makeText(toastContext, toastOut, duration);
+                    toast.show();
                 }
             }
         });

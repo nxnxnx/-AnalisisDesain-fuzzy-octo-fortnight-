@@ -22,6 +22,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/test"
         android:focusable="true"
+        android:textColor="@color/text_color"
         android:textColorHighlight="#ff7eff15"
         android:hint="Enter Username"
         android:gravity="center"
