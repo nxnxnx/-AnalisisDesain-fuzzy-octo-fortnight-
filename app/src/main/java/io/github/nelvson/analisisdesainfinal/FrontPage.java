@@ -22,7 +22,7 @@ public class FrontPage extends Activity {
         webSettings.setJavaScriptEnabled(true);
 
         webView.setWebViewClient(new WebViewClient());
-        webView.loadUrl("file:///android_asset/index.html");
+        webView.loadUrl("file:///android_asset/interface.html");
     }
 
 }
